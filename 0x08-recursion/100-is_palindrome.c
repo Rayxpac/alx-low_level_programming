@@ -19,7 +19,7 @@ return (i);
 int is_palindrome(char *s)
 {
 int n = last(s);
-return (palindrome(s, 0, n - 1, n % 2));
+return (is_palindrome(s, 0, n - 1, n % 2));
 }
 /**
  *  * palindrome - the palindrome checker
@@ -29,7 +29,7 @@ return (palindrome(s, 0, n - 1, n % 2));
  *      * @pair: integer
  *       * Return: 1 if palindrome, otherwise 0
  */
-int palindrome(char *s, int b, int n, int pair)
+int is_palindrome(char *s, int b, int n, int pair)
 {
 if ((b == n && pair != 0) || (b == n + 1 && pair == 0))
 return (1);
@@ -38,9 +38,3 @@ return (0);
 else
 return (is_palindrome(s, b + 1, n - 1, pair));
 }
-/**
- *  * strlen_with_no_wilds - gets the length of a string,
- *   *                   ignoring wildcard characters
- *    * @str: The string to be measured
- *     * Return: The length
- *      */
