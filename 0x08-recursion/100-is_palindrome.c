@@ -36,6 +36,11 @@ return (1);
 else if (s[b] != s[n])
 return (0);
 else
-return (palindrome(s, b + 1, n - 1, pair));
+return (is_palindrome(s, b + 1, n - 1, pair));
 }
-
+/**
+ *  * strlen_with_no_wilds - gets the length of a string,
+ *   *                   ignoring wildcard characters
+ *    * @str: The string to be measured
+ *     * Return: The length
+ *      */
