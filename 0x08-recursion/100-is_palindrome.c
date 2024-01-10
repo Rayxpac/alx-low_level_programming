@@ -19,7 +19,7 @@ return (i);
 int is_palindrome(char *s)
 {
 int n = last(s);
-return (is_palindrome(s, 0, n - 1, n % 2));
+return (palindrome(s, 0, n - 1, n % 2));
 }
 /**
  *  * palindrome - the palindrome checker
@@ -29,12 +29,12 @@ return (is_palindrome(s, 0, n - 1, n % 2));
  *      * @pair: integer
  *       * Return: 1 if palindrome, otherwise 0
  */
-int is_palindrome(char *s, int b, int n, int pair)
+int palindrome(char *s, int b, int n, int pair)
 {
 if ((b == n && pair != 0) || (b == n + 1 && pair == 0))
 return (1);
 else if (s[b] != s[n])
 return (0);
 else
-return (is_palindrome(s, b + 1, n - 1, pair));
+return (palindrome(s, b + 1, n - 1, pair));
 }
