@@ -8,4 +8,6 @@
 
 # 0x0B. C - malloc, free
 - Memory allocation
-
+# 0x0C. C - More malloc, free
+C
+- Memory allocation
