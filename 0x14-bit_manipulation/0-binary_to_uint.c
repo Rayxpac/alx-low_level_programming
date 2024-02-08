@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 
 /**
  *  * binary_to_uint - converts a binary to unsignrd int
@@ -6,6 +6,7 @@ i#include "main.h"
  *    * Return: converted number, or 0 if b is NULL or
  *     * there is one or more chars in the string b that is not 0 or 1
  */
+
 unsigned int binary_to_uint(const char *b)
 {
 unsigned int decimal = 0;
@@ -22,11 +23,13 @@ str_len--;
 }
 return (decimal);
 }
+
 /**
  *  * check_string - checks if a string has only 0's and 1's
  *   * @b: pointer string to be checked
  *    * Return: 1 if string is valid, 0 otherwise
  */
+
 int check_string(const char *b)
 {
 if (b == NULL)
